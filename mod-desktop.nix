@@ -30,6 +30,7 @@ qt5.mkDerivation rec {
       bash
     ]
     ++ deps;
+
   nativeBuildInputs = [
     qt5.wrapQtAppsHook
     autoPatchelfHook
