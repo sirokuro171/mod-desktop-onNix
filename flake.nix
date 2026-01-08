@@ -8,7 +8,7 @@
   outputs =
     { self, nixpkgs, ... }@inputs:
     let
-      mod-desktop = nixpkgs.legacyPackages.x86_64-linux.callPackage ./mod-desktop.nix { };
+      mod-desktop = nixpkgs.legacyPackages.x86_64-linux.callPackage ./pkgs/mod-desktop/default.nix { };
     in
     {
       packages."x86_64-linux".default = mod-desktop;
