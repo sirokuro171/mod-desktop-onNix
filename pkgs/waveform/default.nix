@@ -7,7 +7,7 @@
   makeWrapper,
 }:
 let
-  version = "13.5.21";
+  version = "13.5.25";
   splitted_version = lib.strings.splitString "." version;
 in
 stdenv.mkDerivation rec {
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
         undot_version = lib.strings.concatStrings splitted_version;
       in
       "https://downloads.tracktion.com/w13/${undot_version}/waveform13_${version}_amd64.deb";
-    hash = "sha256-yZgLZqjg9oRlOCvntSe4Gg44fGaoIBOQ9gg9wDDY1tY=";
+    hash = "sha256-KNb67vrT6S9DnOGpiwmxCDS8oFUEu8JTI05d5LQitXc=";
   };
 
   buildInputs = with pkgs; [
